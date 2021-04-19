@@ -1,23 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent">
-    <TextView
-        android:id="@+id/text_view_result"
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_marginTop="32dp"
-        android:text="@string/name" />
-    <Button
-        android:id="@+id/btn_edit"
-        android:layout_marginTop="12dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/text_view_result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/edit_name" />
-</RelativeLayout>
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_fragment1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="show_fragment_1"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_fragment2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="show_fragment_2"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,6 +1,5 @@
 <resources>
-    <string name="app_name">Intent2Result</string>
-    <string name="name">Name</string>
-    <string name="edit_name">Edit Name</string>
-    <string name="save_name">Save Name</string>
+    <string name="app_name">Fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
